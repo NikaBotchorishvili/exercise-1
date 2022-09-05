@@ -1,87 +1,71 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
 }
 
-header{
-    width: 100%;
+header {
+	width: 100%;
 }
 
-.navigation{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    
+.navigation {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.logo {
+	width: 90px;
 }
 
-a{
-    text-decoration: none;
+ul {
+	display: flex;
+	width: 30%;
+	justify-content: space-between;
 }
 
-.logo{
-    width: 90px;
-}
-
-.navigation ul{
-    display: flex;
-    width: 40%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.content{
-    width: 100%;
-    background-color:lightgray;
-    display: grid;
-    justify-content: space-around;
-    margin-top: 10px;
-}
-
-.content-box{
-    /* width:300px; */
-    background-color:white;
-}
-
-.content-box img{
-    width: 100%;
-}
-
-.contect-box-header{
-    color:blue;
-    margin: 10px;
+.contect-box-header {
+	color: blue;
+	margin: 10px;
 }
 .container {
-    max-width: 90%;
-    margin: 20px auto
+	width: 100%;
+	background-color: lightgray;
+	margin-top: 20px;
+	padding: 20px 0;
 }
-.content-box-text{
-    color: gray;
-    margin:0 10px 10px 10px;
-}
-@media only screen and (min-width: 320px){
-    .main-content{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-    }
+.content-box-text {
+	color: gray;
+	margin: 0 10px 10px 10px;
 }
 
-@media only screen and (min-width: 720px){
-    .main-content{
-        grid-template-columns: repeat(2 , 1fr);
-    }
+.main-content {
+	display: flex;
+	width: 90%;
+	gap: 20px;
+	margin: 0 auto;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 960px){
-    .main-content{
-        grid-template-columns: repeat(3 , 1fr);
-    }
+.main-content > .content-box {
+	background-color: white;
+	width: 300px;
 }
 
-@media only screen and (min-width:1200px){
-    .main-content{
-        grid-template-columns: repeat(4 , 1fr);
+.content-box > img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 1050px) {
+	ul {
+		width: 50%;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+	ul {
+        width: 5%;
+        flex-direction: column;
     }
 }
